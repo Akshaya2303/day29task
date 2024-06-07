@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan animation</title>
+    <style>
+        body{
+            display: grid;
+          
+
+        }
+        button{
+            background-color: orange;
+        }
+        #button1:hover~img{
+            transition:8s;
+            clip-path: circle(70%);
+            transform: rotate(270deg);
+        }
+        #button2:hover~img{
+            transition: 6s;
+            clip-path: circle(90%);
+            transform: rotate(590deg);
+        }
+        #button3:hover~img{
+            transition: 2s;
+            clip-path: circle(100%);
+            transform: rotate(660deg);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <main>
+    <button id="button1">1</button>
+    <br>
+    <br>
+    <button id="button2">2</button>
+    <br>
+    <br>
+    <button id="button3">3</button>
+    <br>
+    <img src="./fan.png" width="200" height="200" alt="fan">
+</main>
+</body>
+</html>
